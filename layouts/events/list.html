@@ -1,0 +1,10 @@
+{{ define "og-title" }}
+  {{ .Title }} - {{ .Site.Title }}
+{{ end }}
+{{ define "title" }}
+  {{ .Title }} - {{ .Site.Title }}
+{{ end }}
+{{ define "content" }}
+  {{ partial "list-events.html" . }}
+  {{ partial "find-us-here.html" . }}
+{{ end }}
